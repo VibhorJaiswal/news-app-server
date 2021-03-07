@@ -15,7 +15,7 @@ app.post('/test', (req, res) => {
 
     console.log(req.body.name);
 
-    // fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=16561fca1cf246439faa4a503efcf7d6')
+    // fetch(`https://newsapi.org/v2/everything?q=bitcoin&apiKey=${process.env.API_KEY}`)
     //     .then(r => r.json())
     //     .then(re => { console.log(re); res.send(re) })
 });
